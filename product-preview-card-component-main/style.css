@@ -80,6 +80,8 @@ svg {
 .flex{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
 }
 body{
     display: grid;
@@ -89,7 +91,8 @@ body{
 }
 
 .container{
-    max-width: 500px;
+    margin-top: 4px;
+    max-width: 600px;
     margin-inline: auto;
 }
 
@@ -121,10 +124,65 @@ h2 {
     
 }  
 
+.button{
+  background-color: var(--cor-primaria);
+  font-family: var(--ff-monster);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  color: var(--corneutra3);
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.price1{
+  font-size: 1.50rem;
+  color: var(--cor-primaria);
+}
+
+
+
+
 .container-desc{
-    padding: 1rem;
+  margin-left: 30px;
+  margin-right: 20px;
+  margin-top: 20px;
+
 }
 .prices{
     display: flex;
     gap: 16px;
+}
+
+.price2{
+  text-decoration: line-through;
+}
+
+@media (max-width: 600px) 
+
+{
+  .container-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+
+  .img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .container{
+    max-width: 320px;
+  }
+
+  .flex{
+    display: flex;
+
+    gap: 9px;
+}
+  
 }
