@@ -17,7 +17,9 @@ ul[role="list"],
 ol[role="list"] {
   list-style: none;
 }
-
+li{
+    list-style: none;
+}
 /* Set core root defaults */
 html:focus-within {
   scroll-behavior: smooth;
@@ -57,5 +59,72 @@ svg {
     --fs-body: 14px; 
     --ff-monster: 'Montserrat', sans-serif;
     --ff-frances: 'Fraunces', serif;
+    --fw-bold: 700;
 
+}
+
+.cor-neutra2{
+    color: var(--cor-neutra2);
+}
+
+.fw-bold{
+    font-weight: var(--fw-bold);
+}
+.font-frances{
+    font-family: var(--ff-frances);
+}
+
+.font-monster{
+    font-family: var(--ff-monster);
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+body{
+    display: grid;
+    place-items: center;
+    height: 100%;
+    background-color: var(--cor-primaria2);
+}
+
+.container{
+    max-width: 500px;
+    margin-inline: auto;
+}
+
+.container-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    
+}
+
+
+h1{
+    font-size: 1.9rem;
+    color: var(--cor-neutra);
+    line-height: 0.9;
+    padding: 1px 0 1px 0;
+}
+
+
+
+h2 {
+    letter-spacing: 0.12rem;
+    color: var(--cor-neutra2);
+
+}
+
+.container{
+    background-color: var(--corneutra3);
+    
+}  
+
+.container-desc{
+    padding: 1rem;
+}
+.prices{
+    display: flex;
+    gap: 16px;
 }
